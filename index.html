@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nova AI</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">N</div>
+
+        <div>
+          <h1>Nova AI</h1>
+          <span>AI Assistant</span>
+        </div>
+      </div>
+
+      <button class="new-chat-btn" id="newChatBtn">
+        <span>+</span>
+        New Chat
+      </button>
+
+      <div class="sidebar-section">
+        <p class="section-title">Your Assistant</p>
+
+        <div class="assistant-card">
+          <div class="assistant-avatar">N</div>
+
+          <div class="assistant-info">
+            <strong>Nova</strong>
+            <span>
+              <i></i>
+              Online
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-item">
+          <span>⚙</span>
+          Settings
+        </div>
+
+        <div class="sidebar-item">
+          <span>?</span>
+          Help
+        </div>
+      </div>
+
+    </aside>
+
+
+    <!-- Main Chat -->
+    <main class="chat-area">
+
+      <!-- Header -->
+      <header class="chat-header">
+
+        <div class="mobile-brand">
+          <div class="brand-icon">N</div>
+          <strong>Nova AI</strong>
+        </div>
+
+        <div class="header-info">
+          <div class="header-avatar">N</div>
+
+          <div>
+            <h2>Nova</h2>
+
+            <div class="status">
+              <span class="status-dot"></span>
+              Online
+            </div>
+          </div>
+        </div>
+
+        <button class="header-button" id="clearChatBtn" title="Clear chat">
+          ⟳
+        </button>
+
+      </header>
+
+
+      <!-- Messages -->
+      <section class="messages" id="messages">
+
+        <div class="welcome">
+
+          <div class="welcome-icon">
+            ✦
+          </div>
+
+          <h2>How can I help you?</h2>
+
+          <p>
+            I'm Nova, your AI assistant. Ask me anything and
+            I'll do my best to help you.
+          </p>
+
+          <div class="suggestions">
+
+            <button class="suggestion">
+              <span>💡</span>
+              Give me a creative idea
+            </button>
+
+            <button class="suggestion">
+              <span>💻</span>
+              Help me write some code
+            </button>
+
+            <button class="suggestion">
+              <span>✍️</span>
+              Write something for me
+            </button>
+
+            <button class="suggestion">
+              <span>📚</span>
+              Explain something to me
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- Typing indicator -->
+      <div class="typing-container" id="typingContainer">
+
+        <div class="message-avatar">
+          N
+        </div>
+
+        <div class="typing">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+
+
+      <!-- Input -->
+      <footer class="input-area">
+
+        <div class="input-wrapper">
+
+          <textarea
+            id="messageInput"
+            placeholder="Message Nova..."
+            rows="1"
+            autocomplete="off"
+          ></textarea>
+
+          <button
+            id="sendButton"
+            class="send-button"
+            title="Send message"
+          >
+            <span>➤</span>
+          </button>
+
+        </div>
+
+        <p class="disclaimer">
+          Nova can make mistakes. Check important information.
+        </p>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
